@@ -24,7 +24,7 @@ const Home=()=>{
            const fetchData=async()=>{
             const res=await selectData(email);
             const arr=[];
-            for(let row of res){
+            for(const row of res){
                 if(!row.city || row.city.trim()===""){
                     continue;
                 }

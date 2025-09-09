@@ -3,7 +3,7 @@
 import { useUser } from "@clerk/nextjs"
 
 const ForHead = () => {
-     const { isSignedIn, user, isLoaded } = useUser()
+     const { isSignedIn, user} = useUser()
   return (
     <div>
         {
